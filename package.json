@@ -1,0 +1,37 @@
+{
+  "name": "mithril-prototype",
+  "version": "1.0.0",
+  "description": "mithril-prototype",
+  "main": "dist/dist.bundle.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "watch": "webpack --config webpack.dev.js --watch",
+    "dev": "webpack --config webpack.dev.js",
+    "prod": "webpack --config webpack.prod.js",
+    "server": "webpack-dev-server --open --hot",
+    "plugin": "rollup -c"
+  },
+  "dependencies": {
+    "mithril": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-react-jsx": "^7.9.4",
+    "@babel/preset-env": "^7.9.6",
+    "@rollup/plugin-alias": "^3.1.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "rollup-plugin-cleaner": "^1.0.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^3.1.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2",
+    "webpack-modules": "^1.0.0"
+  }
+}
